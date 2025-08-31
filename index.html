@@ -29,6 +29,21 @@
         #moreCerts.hidden {
             display: none;
         }
+        /* Spline iframe ke liye styles */
+        .spline-container {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .spline-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 1.5rem; /* rounded-3xl */
+        }
     </style>
 </head>
 <body>
@@ -52,29 +67,41 @@
     </header>
 
     <main>
-        <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden">
+        <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden px-8">
             <div class="absolute inset-0 z-0">
                 <div class="h-full w-full bg-[radial-gradient(#ffffff33_1px,#0d1117_1px)] bg-[size:20px_20px] opacity-10"></div>
             </div>
-            <div class="relative z-10 text-center max-w-4xl px-8">
-                <p class="text-xl text-gray-400 mb-4">Hello, I'm</p>
-                <h1 class="text-6xl lg:text-8xl font-black leading-tight mb-6">
-                    <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kavya Rajput</span>
-                </h1>
-                <p class="text-2xl lg:text-3xl text-gray-300 mb-12">
-                    A Passionate <span class="font-bold text-white">B.Tech Student</span> and aspiring Full Stack Developer
-                </p>
-                <div class="flex flex-col sm:flex-row justify-center gap-6">
-                    <a href="#projects" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">
-                        View My Projects
-                    </a>
-                    <a href="#contact" class="px-8 py-4 rounded-full bg-gray-800/80 glass-effect text-white font-semibold shadow-lg hover:border-cyan-500/50 transition">
-                        Get In Touch
-                    </a>
+            <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 w-full max-w-7xl mx-auto">
+                <!-- Text Content on the Left -->
+                <div class="text-center lg:text-left lg:w-1/2">
+                    <h1 class="text-6xl lg:text-8xl font-black leading-tight mb-4">
+                        <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kavya Rajput</span>
+                    </h1>
+                    <p class="text-2xl lg:text-3xl text-gray-300 mb-6">
+                        B.Tech Student | Tech Enthusiast | Problem Solver
+                    </p>
+                    <p class="text-xl text-gray-400 mb-12 max-w-lg lg:max-w-none">
+                        Passionate about technology and continuous learning. Building skills in <span class="text-white font-semibold">Modern Technologies</span>.
+                    </p>
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-6">
+                        <a href="#projects" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">
+                            Explore My Journey
+                        </a>
+                        <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="px-8 py-4 rounded-full bg-gray-800/80 glass-effect text-white font-semibold shadow-lg hover:border-cyan-500/50 transition">
+                            Let's Connect
+                        </a>
+                    </div>
+                </div>
+                <!-- Spline Robot on the Right -->
+                <div class="relative lg:w-1/2 w-full h-96 lg:h-[600px] mt-12 lg:mt-0 spline-container">
+                    <!-- Yeh iframe aapke Spline scene ko embed karta hai. -->
+                    <!-- https://my.spline.design/your-file-id ko apne Spline URL se badal dein. -->
+                    <iframe src='https://my.spline.design/robotcopy-a05e59b922a9693962d354b6d44d6537/' frameborder='0' class="rounded-3xl hover-glow transition-all duration-300"></iframe>
+                    <p class="absolute bottom-4 right-4 text-xs text-gray-500 bg-gray-900/50 backdrop-blur px-2 py-1 rounded">Built with Spline</p>
                 </div>
             </div>
         </section>
-
+        
         <section id="about" class="py-32 px-8 lg:px-16 bg-gray-900/50 relative overflow-hidden">
             <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
                 <div>
@@ -91,7 +118,7 @@
                             My LinkedIn
                         </a>
                         <a href="#contact" class="px-6 py-2 rounded-full bg-gray-800/80 glass-effect text-white font-semibold shadow-lg hover:border-cyan-500/50 transition">
-                            Contact Me
+                            Get In Touch
                         </a>
                     </div>
                 </div>
@@ -126,26 +153,24 @@
                         </div>
                     </div>
                     <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                        <h3 class="text-2xl font-bold text-white mb-2">Backend</h3>
+                        <h3 class="text-2xl font-bold text-white mb-2">AI & Development</h3>
                         <p class="text-gray-400 mb-4">Building server-side logic and robust APIs.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Node.js</span>
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Express.js</span>
                             <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Python</span>
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Django</span>
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">REST APIs</span>
+                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Prompt Engineering</span>
+                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Node.js</span>
+                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Firebase</span>
+                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Git</span>
                         </div>
                     </div>
                     <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                        <h3 class="text-2xl font-bold text-white mb-2">Databases & Tools</h3>
+                        <h3 class="text-2xl font-bold text-white mb-2">Tools & Learning</h3>
                         <p class="text-gray-400 mb-4">Managing and deploying data and applications.</p>
                         <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">SQL</span>
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">MongoDB</span>
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Firebase</span>
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Git</span>
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Docker</span>
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">AWS</span>
+                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Hugging Face Spaces</span>
+                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Netlify</span>
+                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Vercel</span>
+                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Spline</span>
                         </div>
                     </div>
                 </div>
