@@ -44,7 +44,8 @@
         }
         
         body {
-            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            /* Adjusted background to blend with Spline model */
+            background: linear-gradient(135deg, #0a0d17 0%, #171d2c 50%, #0a0d17 100%);
             color: white;
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
@@ -89,6 +90,20 @@
         .scroll-smooth {
             scroll-behavior: smooth;
         }
+
+        /* Custom style for Spline iframe to make it blend more */
+        .spline-background-iframe {
+            filter: brightness(0.7) contrast(1.2); /* Adjust brightness and contrast */
+            transform: scale(1.25); /* Make it slightly larger */
+        }
+
+        /* Overlay for hero section content */
+        .hero-content-overlay {
+            backdrop-filter: blur(5px);
+            background: rgba(0,0,0,0.2);
+            padding: 2rem; /* Add some padding */
+            border-radius: 1.5rem; /* Rounded corners */
+        }
     </style>
 </head>
 <body class="bg-gray-900 text-white overflow-x-hidden">
@@ -128,70 +143,77 @@
         </div>
     </nav>
 
-    <section id="home" class="min-h-screen flex items-center justify-between px-8 lg:px-16 relative overflow-hidden">
-        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-purple-500/5 to-pink-500/5 rounded-full blur-3xl"></div>
-
-        <div class="flex-1 max-w-3xl relative z-10">
-            <div class="mb-6">
-                <span class="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-cyan-400 text-sm font-semibold glass-effect">
-                    ✨ Portfolio 2025
-                </span>
-            </div>
-
-            <h1 class="text-7xl lg:text-9xl font-black mb-8 leading-none">
-                <span class="block bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x">
-                    Kavya
-                </span>
-                <span class="block bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
-                    Rajput
-                </span>
-            </h1>
-            
-            <div class="text-3xl lg:text-4xl text-gray-300 mb-10 h-16 relative">
-                <span class="typewriter">B.Tech Student | Tech Enthusiast | Problem Solver</span>
-            </div>
-
-            <p class="text-2xl text-gray-400 mb-12 leading-relaxed max-w-2xl">
-                Passionate about technology and continuous learning. 
-                Building skills in <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text font-bold">Modern Technologies</span>
-            </p>
-
-            <div class="flex gap-8 flex-wrap">
-                <button class="px-10 py-5 bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 text-white rounded-full font-bold text-lg hover:from-cyan-500 hover:to-purple-500 transition-all duration-300 flex items-center gap-3 relative overflow-hidden group hover-glow">
-                    <i data-lucide="rocket"></i>
-                    <span>Explore My Journey</span>
-                </button>
-                
-                <button class="px-10 py-5 border-2 border-cyan-500/50 text-cyan-400 rounded-full font-bold text-lg hover:bg-cyan-500/10 transition-all duration-300 flex items-center gap-3 glass-effect">
-                    <i data-lucide="message-circle"></i>
-                    Let's Connect
-                </button>
-            </div>
-
-            <div class="mt-16 grid grid-cols-3 gap-8 max-w-lg">
-                <div class="text-center">
-                    <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                        9+
-                    </div>
-                    <div class="text-gray-500 text-sm mt-1">Certifications</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                        3+
-                    </div>
-                    <div class="text-gray-500 text-sm mt-1">Projects</div>
-                </div>
-                <div class="text-center">
-                    <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                        100%
-                    </div>
-                    <div class="text-gray-500 text-sm mt-1">Passion</div>
-                </div>
-            </div>
+    <section id="home" class="h-screen flex flex-col lg:flex-row items-center justify-around px-8 lg:px-16 relative overflow-visible">
+        <div class="absolute inset-0 w-full h-full">
+            <iframe src='https://my.spline.design/robotfollowcursorforlandingpage-5rOjbm2iFzVunAPOarpdA6Qj/' 
+                    frameborder='0' 
+                    width='100%' 
+                    height='100%' 
+                    class="absolute inset-0 w-full h-full object-cover pointer-events-none opacity-75 spline-background-iframe"
+                    style="left: 50%; top: 50%; transform: translate(-50%, -50%) scale(1.25); z-index: 0;">
+            </iframe>
         </div>
 
-        <div class="flex-1 flex justify-center items-center relative z-10" style="height: 100vh;">
-            <iframe src='https://my.spline.design/robotfollowcursorforlandingpage-5rOjbm2iFzVunAPOarpdA6Qj/' frameborder='0' width='100%' height='100%' class="absolute inset-0"></iframe>
+        <div class="relative z-20 flex flex-col lg:flex-row items-center justify-between w-full h-full max-w-7xl mx-auto hero-content-overlay">
+            <div class="flex-1 max-w-3xl text-center lg:text-left">
+                <div class="mb-6">
+                    <span class="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-cyan-400 text-sm font-semibold glass-effect">
+                        ✨ Portfolio 2025
+                    </span>
+                </div>
+
+                <h1 class="text-7xl lg:text-9xl font-black mb-8 leading-none">
+                    <span class="block bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x">
+                        Kavya
+                    </span>
+                    <span class="block bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                        Rajput
+                    </span>
+                </h1>
+                
+                <div class="text-3xl lg:text-4xl text-gray-300 mb-10 h-16 relative">
+                    <span class="typewriter">B.Tech Student | Tech Enthusiast | Problem Solver</span>
+                </div>
+
+                <p class="text-2xl text-gray-400 mb-12 leading-relaxed max-w-2xl">
+                    Passionate about technology and continuous learning. 
+                    Building skills in <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text font-bold">Modern Technologies</span>
+                </p>
+
+                <div class="flex gap-8 flex-wrap justify-center lg:justify-start">
+                    <button class="px-10 py-5 bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 text-white rounded-full font-bold text-lg hover:from-cyan-500 hover:to-purple-500 transition-all duration-300 flex items-center gap-3 relative overflow-hidden group hover-glow">
+                        <i data-lucide="rocket"></i>
+                        <span>Explore My Journey</span>
+                    </button>
+                    
+                    <button class="px-10 py-5 border-2 border-cyan-500/50 text-cyan-400 rounded-full font-bold text-lg hover:bg-cyan-500/10 transition-all duration-300 flex items-center gap-3 glass-effect">
+                        <i data-lucide="message-circle"></i>
+                        Let's Connect
+                    </button>
+                </div>
+
+                <div class="mt-16 grid grid-cols-3 gap-8 max-w-lg mx-auto lg:mx-0">
+                    <div class="text-center">
+                        <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                            9+
+                        </div>
+                        <div class="text-gray-500 text-sm mt-1">Certifications</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                            3+
+                        </div>
+                        <div class="text-gray-500 text-sm mt-1">Projects</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                            100%
+                        </div>
+                        <div class="text-gray-500 text-sm mt-1">Passion</div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex-1 hidden lg:block"></div>
         </div>
     </section>
 
