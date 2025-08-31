@@ -1,451 +1,758 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kavya Rajput - Portfolio</title>
+    <title>Kavya Rajput - AI Innovator & Data Wizard</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.js"></script>
+    
+    <script type="module">
+        import { createIcons, ChevronDown, Github, ExternalLink, X, MessageCircle, Mail, Phone, MapPin, Calendar, Award, Code, Database, BarChart3, PenTool, Cloud, Bot, Sparkles, Zap, Star, Layers, Cpu, Target, Brain, Eye, Users, TrendingUp, Rocket, Heart, Coffee, Music, ArrowRight, ArrowUp, Globe, Linkedin, Twitter, Instagram, Play, Pause, Volume2, Minimize2 } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
+        createIcons();
+    </script>
+    
     <style>
+        .animate-gradient-x {
+            animation: gradient-x 15s ease infinite;
+            background-size: 200% 200%;
+        }
+        
+        @keyframes gradient-x {
+            0%, 100% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+        }
+        
+        .line-clamp-2 {
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
+        .line-clamp-3 {
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+        }
+        
         body {
-            font-family: 'Inter', sans-serif;
-            background-color: #0d1117;
-            color: #e2e8f0;
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%);
+            color: white;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
         }
+        
         .glass-effect {
-            background-color: rgba(30, 41, 59, 0.4);
-            backdrop-filter: blur(10px);
-            border: 1px solid rgba(71, 85, 105, 0.4);
+            backdrop-filter: blur(20px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
         }
+        
         .hover-glow:hover {
-            box-shadow: 0 0 15px rgba(59, 130, 246, 0.5), 0 0 30px rgba(59, 130, 246, 0.3);
+            box-shadow: 0 0 30px rgba(6, 182, 212, 0.5);
         }
-        html {
+        
+        .typewriter {
+            overflow: hidden;
+            border-right: 0.15em solid #06b6d4;
+            white-space: nowrap;
+            animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
+        }
+        
+        @keyframes typing {
+            from { width: 0 }
+            to { width: 100% }
+        }
+        
+        @keyframes blink-caret {
+            from, to { border-color: transparent }
+            50% { border-color: #06b6d4 }
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-20px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .scroll-smooth {
             scroll-behavior: smooth;
-        }
-        #moreCerts.hidden {
-            display: none;
-        }
-        /* Spline iframe ke liye styles */
-        .spline-container {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-        .spline-container iframe {
-            width: 100%;
-            height: 100%;
-            border: none;
-            border-radius: 1.5rem; /* rounded-3xl */
         }
     </style>
 </head>
-<body>
-    <header class="fixed top-0 left-0 right-0 z-50 bg-gray-900/80 backdrop-blur-md transition-all duration-300">
-        <div class="max-w-7xl mx-auto px-8 lg:px-16 py-4 flex justify-between items-center">
-            <a href="#home" class="text-3xl font-black bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                Kavya Rajput
-            </a>
-            <nav class="hidden lg:flex items-center gap-8">
-                <a href="#home" class="text-gray-300 hover:text-cyan-400 transition-colors">Home</a>
-                <a href="#about" class="text-gray-300 hover:text-cyan-400 transition-colors">About</a>
-                <a href="#skills" class="text-gray-300 hover:text-cyan-400 transition-colors">Skills</a>
-                <a href="#certificates" class="text-gray-300 hover:text-cyan-400 transition-colors">Certificates</a>
-                <a href="#projects" class="text-gray-300 hover:text-cyan-400 transition-colors">Projects</a>
-                <a href="#contact" class="text-gray-300 hover:text-cyan-400 transition-colors">Contact</a>
-            </nav>
-            <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="hidden lg:block px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">
-                Let's Connect
-            </a>
+<body class="bg-gray-900 text-white overflow-x-hidden">
+    
+    <nav class="fixed top-0 left-0 right-0 z-50 glass-effect">
+        <div class="max-w-7xl mx-auto px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="text-3xl font-black bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent cursor-pointer">
+                    KR
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-2">
+                    <a href="#home" class="px-6 py-3 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:text-cyan-400 hover:bg-white/5 flex items-center gap-2">
+                        <span>🏠</span> Home
+                    </a>
+                    <a href="#about" class="px-6 py-3 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:text-cyan-400 hover:bg-white/5 flex items-center gap-2">
+                        <span>👋</span> About
+                    </a>
+                    <a href="#skills" class="px-6 py-3 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:text-cyan-400 hover:bg-white/5 flex items-center gap-2">
+                        <span>⚡</span> Skills
+                    </a>
+                    <a href="#certificates" class="px-6 py-3 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:text-cyan-400 hover:bg-white/5 flex items-center gap-2">
+                        <span>🏆</span> Certificates
+                    </a>
+                    <a href="#projects" class="px-6 py-3 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:text-cyan-400 hover:bg-white/5 flex items-center gap-2">
+                        <span>🚀</span> Projects
+                    </a>
+                    <a href="#contact" class="px-6 py-3 rounded-full font-semibold transition-all duration-300 text-gray-300 hover:text-cyan-400 hover:bg-white/5 flex items-center gap-2">
+                        <span>📧</span> Contact
+                    </a>
+                </div>
+                
+                <button class="md:hidden w-12 h-12 rounded-full bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 glass-effect flex items-center justify-center">
+                    <div class="w-6 h-0.5 bg-white"></div>
+                </button>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <main>
-        <section id="home" class="min-h-screen flex items-center justify-center relative overflow-hidden px-8">
-            <div class="absolute inset-0 z-0">
-                <div class="h-full w-full bg-[radial-gradient(#ffffff33_1px,#0d1117_1px)] bg-[size:20px_20px] opacity-10"></div>
+    <section id="home" class="min-h-screen flex items-center justify-between px-8 lg:px-16 relative overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-purple-500/5 to-pink-500/5 rounded-full blur-3xl"></div>
+
+        <div class="flex-1 max-w-3xl relative z-10">
+            <div class="mb-6">
+                <span class="inline-block px-6 py-2 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 border border-cyan-500/30 rounded-full text-cyan-400 text-sm font-semibold glass-effect">
+                    ✨ Portfolio 2025
+                </span>
             </div>
-            <div class="relative z-10 flex flex-col lg:flex-row items-center justify-between gap-12 w-full max-w-7xl mx-auto">
-                <!-- Text Content on the Left -->
-                <div class="text-center lg:text-left lg:w-1/2">
-                    <h1 class="text-6xl lg:text-8xl font-black leading-tight mb-4">
-                        <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Kavya Rajput</span>
-                    </h1>
-                    <p class="text-2xl lg:text-3xl text-gray-300 mb-6">
-                        B.Tech Student | Tech Enthusiast | Problem Solver
+
+            <h1 class="text-7xl lg:text-9xl font-black mb-8 leading-none">
+                <span class="block bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent animate-gradient-x">
+                    Kavya
+                </span>
+                <span class="block bg-gradient-to-r from-pink-400 via-purple-400 to-cyan-400 bg-clip-text text-transparent">
+                    Rajput
+                </span>
+            </h1>
+            
+            <div class="text-3xl lg:text-4xl text-gray-300 mb-10 h-16 relative">
+                <span class="typewriter">B.Tech Student | Tech Enthusiast | Problem Solver</span>
+            </div>
+
+            <p class="text-2xl text-gray-400 mb-12 leading-relaxed max-w-2xl">
+                Passionate about technology and continuous learning. 
+                Building skills in <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text font-bold">Modern Technologies</span>
+            </p>
+
+            <div class="flex gap-8 flex-wrap">
+                <button class="px-10 py-5 bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 text-white rounded-full font-bold text-lg hover:from-cyan-500 hover:to-purple-500 transition-all duration-300 flex items-center gap-3 relative overflow-hidden group hover-glow">
+                    <i data-lucide="rocket"></i>
+                    <span>Explore My Journey</span>
+                </button>
+                
+                <button class="px-10 py-5 border-2 border-cyan-500/50 text-cyan-400 rounded-full font-bold text-lg hover:bg-cyan-500/10 transition-all duration-300 flex items-center gap-3 glass-effect">
+                    <i data-lucide="message-circle"></i>
+                    Let's Connect
+                </button>
+            </div>
+
+            <div class="mt-16 grid grid-cols-3 gap-8 max-w-lg">
+                <div class="text-center">
+                    <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                        9+
+                    </div>
+                    <div class="text-gray-500 text-sm mt-1">Certifications</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                        3+
+                    </div>
+                    <div class="text-gray-500 text-sm mt-1">Projects</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+                        100%
+                    </div>
+                    <div class="text-gray-500 text-sm mt-1">Passion</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex-1 flex justify-center items-center relative z-10" style="height: 100vh;">
+            <iframe src='https://my.spline.design/robotfollowcursorforlandingpage-5rOjbm2iFzVunAPOarpdA6Qj/' frameborder='0' width='100%' height='100%' class="absolute inset-0"></iframe>
+        </div>
+    </section>
+
+    <section id="about" class="py-32 px-8 lg:px-16 relative overflow-hidden">
+        <div class="max-w-6xl mx-auto">
+            <h2 class="text-6xl lg:text-7xl font-black text-center mb-20 relative">
+                <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    About Me
+                </span>
+            </h2>
+
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <p class="text-2xl text-gray-300 leading-relaxed">
+                        I'm a passionate <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text font-bold">B.Tech student</span> with a strong foundation in 
+                        technology and a drive for continuous learning and innovation.
                     </p>
-                    <p class="text-xl text-gray-400 mb-12 max-w-lg lg:max-w-none">
-                        Passionate about technology and continuous learning. Building skills in <span class="text-white font-semibold">Modern Technologies</span>.
+
+                    <p class="text-xl text-gray-400 leading-relaxed">
+                        My journey involves building skills across various technologies, earning industry certifications, 
+                        and creating projects that solve real-world problems.
                     </p>
-                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-6">
-                        <a href="#projects" class="px-8 py-4 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">
-                            Explore My Journey
-                        </a>
-                        <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="px-8 py-4 rounded-full bg-gray-800/80 glass-effect text-white font-semibold shadow-lg hover:border-cyan-500/50 transition">
-                            Let's Connect
-                        </a>
+
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-gradient-to-r from-red-500 to-pink-500 p-4 rounded-2xl text-white font-semibold flex items-center gap-3 glass-effect">
+                            <i data-lucide="target"></i>
+                            <span>Goal Oriented</span>
+                        </div>
+                        <div class="bg-gradient-to-r from-blue-500 to-cyan-500 p-4 rounded-2xl text-white font-semibold flex items-center gap-3 glass-effect">
+                            <i data-lucide="brain"></i>
+                            <span>Quick Learner</span>
+                        </div>
+                        <div class="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-2xl text-white font-semibold flex items-center gap-3 glass-effect">
+                            <i data-lucide="trending-up"></i>
+                            <span>Tech Focused</span>
+                        </div>
+                        <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-4 rounded-2xl text-white font-semibold flex items-center gap-3 glass-effect">
+                            <i data-lucide="heart"></i>
+                            <span>Innovation Driven</span>
+                        </div>
                     </div>
                 </div>
-                <!-- Spline Robot on the Right -->
-                <div class="relative lg:w-1/2 w-full h-96 lg:h-[600px] mt-12 lg:mt-0 spline-container">
-                    <!-- Yeh iframe aapke Spline scene ko embed karta hai. -->
-                    <!-- https://my.spline.design/your-file-id ko apne Spline URL se badal dein. -->
-                    <iframe src='https://my.spline.design/robotcopy-a05e59b922a9693962d354b6d44d6537/' frameborder='0' class="rounded-3xl hover-glow transition-all duration-300"></iframe>
-                    <p class="absolute bottom-4 right-4 text-xs text-gray-500 bg-gray-900/50 backdrop-blur px-2 py-1 rounded">Built with Spline</p>
+
+                <div class="space-y-6">
+                    <div class="bg-gray-800/80 glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+                                <i data-lucide="calendar" class="text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
+                                    Current Status
+                                </h3>
+                                <p class="text-gray-400">B.Tech Student - GLA 2nd Year</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800/80 glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                                <i data-lucide="map-pin" class="text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
+                                    Location
+                                </h3>
+                                <p class="text-gray-400">India - Building Global Skills</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800/80 glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center">
+                                <i data-lucide="zap" class="text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
+                                    Focus Areas
+                                </h3>
+                                <p class="text-gray-400">Modern Tech Stack & Best Practices</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-800/80 glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 group">
+                        <div class="flex items-center gap-4">
+                            <div class="w-14 h-14 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
+                                <i data-lucide="award" class="text-white"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
+                                    Achievement
+                                </h3>
+                                <p class="text-gray-400">Multiple Industry Certifications</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
+
+    <section id="skills" class="py-32 px-8 lg:px-16 bg-gray-900/50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <h2 class="text-6xl lg:text-7xl font-black text-center mb-8">
+                <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                    Skills & Learning
+                </span>
+            </h2>
+
+            <p class="text-2xl text-gray-400 text-center mb-20 max-w-3xl mx-auto">
+                Building expertise through continuous learning and practical application
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="group bg-gray-800/80 glass-effect rounded-3xl p-8 text-center hover:border-cyan-500/50 transition-all duration-500 relative overflow-hidden hover-glow">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+                        <i data-lucide="target" class="text-white" size="28"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Problem Solving</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Analytical Thinking & Logic</p>
+                    <div class="w-full bg-gray-700/50 rounded-full h-3 overflow-hidden">
+                        <div class="h-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 75%"></div>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-gray-500 mt-4">
+                        <i data-lucide="award" size="16"></i>
+                        <span class="text-sm">Certified</span>
+                    </div>
+                </div>
+
+                <div class="group bg-gray-800/80 glass-effect rounded-3xl p-8 text-center hover:border-cyan-500/50 transition-all duration-500 relative overflow-hidden hover-glow">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                        <i data-lucide="cloud" class="text-white" size="28"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cloud Computing</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Azure Fundamentals</p>
+                    <div class="w-full bg-gray-700/50 rounded-full h-3 overflow-hidden">
+                        <div class="h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 70%"></div>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-gray-500 mt-4">
+                        <i data-lucide="award" size="16"></i>
+                        <span class="text-sm">Certified</span>
+                    </div>
+                </div>
+
+                <div class="group bg-gray-800/80 glass-effect rounded-3xl p-8 text-center hover:border-cyan-500/50 transition-all duration-500 relative overflow-hidden hover-glow">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center">
+                        <i data-lucide="code" class="text-white" size="28"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Web Development</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Modern Frameworks & Tools</p>
+                    <div class="w-full bg-gray-700/50 rounded-full h-3 overflow-hidden">
+                        <div class="h-3 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full" style="width: 65%"></div>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-gray-500 mt-4">
+                        <i data-lucide="layers" size="16"></i>
+                        <span class="text-sm">Learning</span>
+                    </div>
+                </div>
+
+                <div class="group bg-gray-800/80 glass-effect rounded-3xl p-8 text-center hover:border-cyan-500/50 transition-all duration-500 relative overflow-hidden hover-glow">
+                    <div class="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center">
+                        <i data-lucide="cpu" class="text-white" size="28"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Technology</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Emerging Tech & Innovation</p>
+                    <div class="w-full bg-gray-700/50 rounded-full h-3 overflow-hidden">
+                        <div class="h-3 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 68%"></div>
+                    </div>
+                    <div class="flex items-center justify-center gap-2 text-gray-500 mt-4">
+                        <i data-lucide="layers" size="16"></i>
+                        <span class="text-sm">Exploring</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-20 text-center">
+                <div class="inline-flex items-center gap-4 bg-gray-800/80 glass-effect border border-cyan-500/30 rounded-full px-8 py-4 hover-glow">
+                    <i data-lucide="star" class="text-cyan-400"></i>
+                    <span class="text-xl font-semibold text-white">
+                        Learning Progress: <span class="text-cyan-400">Growing Every Day</span>
+                    </span>
+                    <i data-lucide="star" class="text-pink-400"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certificates" class="py-32 px-8 lg:px-16 relative overflow-hidden">
+  <div class="max-w-5xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-6xl lg:text-7xl font-black mb-8">
+        <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Certificates</span>
+      </h2>
+      <p class="text-xl text-gray-400 max-w-3xl mx-auto">A summary of my key certifications. You can find a complete list on my LinkedIn profile.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="certGrid">
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+            <i data-lucide="award" class="text-white" size="28"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Problem Solving</h3>
+            <p class="text-gray-400">HackerRank</p>
+          </div>
+        </div>
+        <p class="text-gray-400 leading-relaxed">
+            This certification validates my ability to solve complex problems and apply logical and analytical thinking.
+        </p>
+      </div>
+
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+            <i data-lucide="code" class="text-white" size="28"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Web Development Fundamentals</h3>
+            <p class="text-gray-400">Infosys Springboard</p>
+          </div>
+        </div>
+        <p class="text-gray-400 leading-relaxed">
+            I earned certifications in HTML5, CSS3, and JavaScript, demonstrating a strong foundation in front-end web development.
+        </p>
+      </div>
+
+      <div id="moreCerts" class="hidden md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">SQL (Basic)</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              This certification showcases my foundational knowledge in SQL for database management.
+          </p>
+        </div>
+
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Python (Basic)</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              I have a solid understanding of basic Python programming concepts and syntax.
+          </p>
+        </div>
         
-        <section id="about" class="py-32 px-8 lg:px-16 bg-gray-900/50 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-                <div>
-                    <h2 class="text-6xl lg:text-7xl font-black mb-8">
-                        <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                            About Me
-                        </span>
-                    </h2>
-                    <p class="text-xl text-gray-400 leading-relaxed mb-6">
-                        I am a B.Tech student at GLA University, majoring in Computer Science with a specialization in Artificial Intelligence and Machine Learning. My passion lies in creating robust and scalable solutions, from developing full-stack applications to leveraging data for insightful analysis. I am constantly expanding my knowledge in the tech community and am available for new opportunities.
-                    </p>
-                    <div class="flex gap-4">
-                        <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="px-6 py-2 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">
-                            My LinkedIn
-                        </a>
-                        <a href="#contact" class="px-6 py-2 rounded-full bg-gray-800/80 glass-effect text-white font-semibold shadow-lg hover:border-cyan-500/50 transition">
-                            Get In Touch
-                        </a>
-                    </div>
-                </div>
-                <div class="relative w-full h-80 rounded-2xl glass-effect p-4 flex items-center justify-center">
-                    <div class="absolute inset-0 rounded-2xl bg-gradient-to-br from-cyan-500/20 via-purple-500/20 to-pink-500/20 animate-pulse-slow"></div>
-                    <img src="https://placehold.co/400x400/1f2937/d1d5db?text=Kavya" alt="Kavya Rajput" class="relative z-10 w-full h-full object-cover rounded-xl">
-                </div>
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
             </div>
-        </section>
-
-        <section id="skills" class="py-32 px-8 lg:px-16 relative">
-            <div class="max-w-7xl mx-auto">
-                <div class="text-center mb-16">
-                    <h2 class="text-6xl lg:text-7xl font-black mb-8">
-                        <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Skills</span>
-                    </h2>
-                    <p class="text-2xl text-gray-400 max-w-4xl mx-auto">
-                        A versatile toolkit for every stage of development, from concept to deployment.
-                    </p>
-                </div>
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                        <h3 class="text-2xl font-bold text-white mb-2">Frontend</h3>
-                        <p class="text-gray-400 mb-4">Crafting beautiful and responsive user interfaces.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-sm font-semibold">HTML</span>
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-sm font-semibold">CSS</span>
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-sm font-semibold">JavaScript</span>
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-sm font-semibold">React</span>
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-sm font-semibold">Angular</span>
-                            <span class="px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 text-sm font-semibold">Tailwind CSS</span>
-                        </div>
-                    </div>
-                    <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                        <h3 class="text-2xl font-bold text-white mb-2">AI & Development</h3>
-                        <p class="text-gray-400 mb-4">Building server-side logic and robust APIs.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Python</span>
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Prompt Engineering</span>
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Node.js</span>
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Firebase</span>
-                            <span class="px-3 py-1 rounded-full bg-purple-500/20 text-purple-400 text-sm font-semibold">Git</span>
-                        </div>
-                    </div>
-                    <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                        <h3 class="text-2xl font-bold text-white mb-2">Tools & Learning</h3>
-                        <p class="text-gray-400 mb-4">Managing and deploying data and applications.</p>
-                        <div class="flex flex-wrap gap-2">
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Hugging Face Spaces</span>
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Netlify</span>
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Vercel</span>
-                            <span class="px-3 py-1 rounded-full bg-pink-500/20 text-pink-400 text-sm font-semibold">Spline</span>
-                        </div>
-                    </div>
-                </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">HTML5</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
             </div>
-        </section>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              Proficient in structuring web pages using modern HTML5 standards.
+          </p>
+        </div>
 
-        <section id="certificates" class="py-32 px-8 lg:px-16 bg-gray-900/50 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto relative z-10">
-                <div class="text-center mb-16">
-                    <h2 class="text-6xl lg:text-7xl font-black mb-8">
-                        <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Certifications</span>
-                    </h2>
-                    <p class="text-2xl text-gray-400 max-w-4xl mx-auto">
-                        Verifying my skills and dedication to continuous learning.
-                    </p>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-                    <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
-                                <i data-lucide="code" class="text-white" size="28"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Intermediate Problem Solving</h3>
-                                <p class="text-gray-400">HackerRank</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 leading-relaxed">
-                            This certification demonstrates my intermediate-level problem solving abilities.
-                        </p>
-                    </div>
-                    <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                        <div class="flex items-center gap-4 mb-4">
-                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
-                                <i data-lucide="award" class="text-white" size="28"></i>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Microsoft Azure Fundamentals</h3>
-                                <p class="text-gray-400">Microsoft</p>
-                            </div>
-                        </div>
-                        <p class="text-gray-400 leading-relaxed">
-                            This certification validates my foundational knowledge of cloud services and how those services are provided with Microsoft Azure.
-                        </p>
-                    </div>
-                    <div id="moreCerts" class="grid grid-cols-1 md:grid-cols-2 gap-8 hidden">
-                        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center">
-                                    <i data-lucide="shield-check" class="text-white" size="28"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Google Cloud Digital Leader</h3>
-                                    <p class="text-gray-400">Google</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-400 leading-relaxed">
-                                I learned to lead digital transformation with Google Cloud.
-                            </p>
-                        </div>
-                        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
-                            <div class="flex items-center gap-4 mb-4">
-                                <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-green-500 to-lime-500 flex items-center justify-center">
-                                    <i data-lucide="leaf" class="text-white" size="28"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Web Development Bootcamp</h3>
-                                    <p class="text-gray-400">Udemy</p>
-                                </div>
-                            </div>
-                            <p class="text-gray-400 leading-relaxed">
-                                A comprehensive course on the fundamentals of full-stack web development.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="text-center mt-10">
-                    <button id="toggleCerts" class="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">View More</button>
-                </div>
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
             </div>
-        </section>
-
-        <section id="projects" class="py-32 px-8 lg:px-16 bg-gray-900/50 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto relative z-10">
-                <div class="text-center mb-16">
-                    <h2 class="text-6xl lg:text-7xl font-black mb-8">
-                        <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                            Projects
-                        </span>
-                    </h2>
-                    <p class="text-2xl text-gray-400 max-w-4xl mx-auto mb-8">
-                        Personal projects showcasing my learning journey and technical growth
-                    </p>
-                    <div class="flex justify-center gap-12">
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-cyan-400">3</div>
-                            <div class="text-gray-500">Total Projects</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-purple-400">3</div>
-                            <div class="text-gray-500">Completed</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-pink-400">100%</div>
-                            <div class="text-gray-500">Learning</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
-                    <!-- AI Powered Marketing Portfolio Site - link updated -->
-                    <a href="https://my-ai-portfolio2025.netlify.app" target="_blank" class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
-                        <div class="h-64 bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center relative">
-                            <div class="text-8xl opacity-60">🤖</div>
-                            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
-                                ✅ Complete
-                            </div>
-                        </div>
-                        <div class="p-8">
-                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 text-white">AI / LLM</span>
-                            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">AI Powered Marketing Portfolio Site</h3>
-                            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
-                                A static portfolio platform where case study pages are dynamically generated using LLMs. Visitors can also request a <span class="text-cyan-400 font-semibold">custom proposal outline</span> through an integrated form.
-                            </p>
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">LLM</span>
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Static Site</span>
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Dynamic Pages</span>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Social Media Sentiment Analyzer -->
-                    <a href="https://huggingface.co/spaces/GLAkavya/Social-Media-Analysis" target="_blank" class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
-                        <div class="h-64 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center relative">
-                            <div class="text-8xl opacity-60">📊</div>
-                            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
-                                ✅ Complete
-                            </div>
-                        </div>
-                        <div class="p-8">
-                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white">Data / AI</span>
-                            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">Social Media Sentiment Analyzer</h3>
-                            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
-                                A Python-based pipeline that streams posts for campaign hashtags, performs <span class="text-cyan-400 font-semibold">sentiment analysis</span> using transformer models, and visualizes rolling stats in a live dashboard. Recently upgraded with a <span class="text-cyan-400 font-semibold">Gemini hybrid model</span> for more accurate insights.
-                            </p>
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Python</span>
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Transformers</span>
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Gemini</span>
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Dashboard</span>
-                            </div>
-                        </div>
-                    </a>
-                    <!-- Personal Portfolio Website - link updated -->
-                    <a href="https://protoflioow.netlify.app" target="_blank" class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
-                        <div class="h-64 bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center relative">
-                            <div class="text-8xl opacity-60">🌐</div>
-                            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
-                                ✅ Complete
-                            </div>
-                        </div>
-                        <div class="p-8">
-                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-yellow-500 to-orange-500 text-white">Web Development</span>
-                            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">Personal Portfolio Website</h3>
-                            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
-                                A responsive portfolio website showcasing skills, certifications, and projects. Built with modern web technologies and featuring interactive elements and smooth animations.
-                            </p>
-                            <div class="flex gap-2 flex-wrap">
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">HTML5</span>
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">CSS3</span>
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">JavaScript</span>
-                                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Responsive</span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="text-center mt-20">
-                    <div class="inline-flex items-center gap-4 bg-gray-800/80 glass-effect border border-cyan-500/30 rounded-full px-8 py-4">
-                        <i data-lucide="rocket" class="text-cyan-400"></i>
-                        <span class="text-xl font-semibold text-white">
-                            More projects coming soon as I continue learning!
-                        </span>
-                        <i data-lucide="heart" class="text-pink-400"></i>
-                    </div>
-                </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">CSS3</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
             </div>
-        </section>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              Skilled in styling and creating responsive designs with CSS3.
+          </p>
+        </div>
+        
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">JavaScript</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              I have foundational knowledge of JavaScript for interactive web experiences.
+          </p>
+        </div>
+        
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Intermediate Problem Solving</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              This certification demonstrates my intermediate-level problem solving abilities.
+          </p>
+        </div>
 
-        <section id="contact" class="py-32 px-8 lg:px-16 relative overflow-hidden">
-            <div class="max-w-5xl mx-auto text-center">
-                <h2 class="text-6xl lg:text-7xl font-black mb-12">
-                    <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Contact Me</span>
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Microsoft Azure Fundamentals</h3>
+              <p class="text-gray-400">Microsoft</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              This certification validates my foundational knowledge of cloud services and how those services are provided with Microsoft Azure.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <button id="toggleCerts" class="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">View More</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const btn = document.getElementById("toggleCerts");
+      const more = document.getElementById("moreCerts");
+      btn.addEventListener("click", () => {
+        if (more.classList.contains("hidden")) {
+          more.classList.remove("hidden");
+          btn.textContent = "View Less";
+        } else {
+          more.classList.add("hidden");
+          btn.textContent = "View More";
+        }
+      });
+    });
+  </script>
+</section>
+
+
+    <section id="projects" class="py-32 px-8 lg:px-16 bg-gray-900/50 relative overflow-hidden">
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-6xl lg:text-7xl font-black mb-8">
+                    <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
+                        Projects
+                    </span>
                 </h2>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <a href="https://github.com/your-username" target="_blank" class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
-                        <i data-lucide="github" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
-                        <p class="text-lg font-semibold text-white">GitHub</p>
-                        <p class="text-gray-400">your-username</p>
-                    </a>
-                    <a href="mailto:kavya.gla_cs.aiml24@gla.ac.in" class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
-                        <i data-lucide="mail" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
-                        <p class="text-lg font-semibold text-white">Email</p>
-                        <p class="text-gray-400">kavya.gla_cs.aiml24@gla.ac.in</p>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
-                        <i data-lucide="linkedin" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
-                        <p class="text-lg font-semibold text-white">LinkedIn</p>
-                        <p class="text-cyan-400 hover:underline">Visit Profile</p>
-                    </a>
+                
+                <p class="text-2xl text-gray-400 max-w-4xl mx-auto mb-8">
+                    Personal projects showcasing learning journey and technical growth
+                </p>
+
+                <div class="flex justify-center gap-12">
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-cyan-400">3</div>
+                        <div class="text-gray-500">Total Projects</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-purple-400">3</div>
+                        <div class="text-gray-500">Completed</div>
+                    </div>
+                    <div class="text-center">
+                        <div class="text-4xl font-bold text-pink-400">100%</div>
+                        <div class="text-gray-500">Learning</div>
+                    </div>
                 </div>
             </div>
-        </section>
 
-        <footer class="py-16 px-8 lg:px-16 bg-gray-900/80 border-t border-gray-800/50">
-            <div class="max-w-6xl mx-auto">
-                <div class="grid lg:grid-cols-3 gap-12 mb-12">
-                    <div>
-                        <div class="text-4xl font-black bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
-                            Kavya Rajput
-                        </div>
-                        <p class="text-gray-400 leading-relaxed">
-                            B.Tech Student passionate about technology, continuous learning, and building meaningful connections in the tech community.
-                        </p>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
-                        <div class="space-y-3">
-                            <a href="#home" class="block text-gray-400 hover:text-cyan-400 transition-colors">Home</a>
-                            <a href="#about" class="block text-gray-400 hover:text-cyan-400 transition-colors">About</a>
-                            <a href="#skills" class="block text-gray-400 hover:text-cyan-400 transition-colors">Skills</a>
-                            <a href="#certificates" class="block text-gray-400 hover:text-cyan-400 transition-colors">Certificates</a>
-                            <a href="#projects" class="block text-gray-400 hover:text-cyan-400 transition-colors">Projects</a>
-                            <a href="#contact" class="block text-gray-400 hover:text-cyan-400 transition-colors">Contact</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-xl font-bold text-white mb-6">Get In Touch</h4>
-                        <div class="space-y-4">
-                            <div class="flex items-center gap-3">
-                                <i data-lucide="mail" size="16" class="text-cyan-400"></i>
-                                <span class="text-gray-400">kavya.gla_cs.aiml24@gla.ac.in</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i data-lucide="map-pin" size="16" class="text-cyan-400"></i>
-                                <span class="text-gray-400">India</span>
-                            </div>
-                            <div class="flex items-center gap-3">
-                                <i data-lucide="globe" size="16" class="text-cyan-400"></i>
-                                <span class="text-gray-400">Available for opportunities</span>
-                            </div>
-                        </div>
-                    </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+    <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
+        <div class="h-64 bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center relative">
+            <div class="text-8xl opacity-60">🤖</div>
+            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
+                ✅ Complete
+            </div>
+        </div>
+        <div class="p-8">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 text-white">AI / LLM</span>
+            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">AI Powered Marketing Portfolio Site</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
+                A static portfolio platform where case study pages are dynamically generated using LLMs. Visitors can also request a <span class="text-cyan-400 font-semibold">custom proposal outline</span> through an integrated form.
+            </p>
+            <div class="flex gap-2 flex-wrap">
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">LLM</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Static Site</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Dynamic Pages</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
+        <div class="h-64 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center relative">
+            <div class="text-8xl opacity-60">📊</div>
+            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
+                ✅ Complete
+            </div>
+        </div>
+        <div class="p-8">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white">Data / AI</span>
+            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">Social Media Sentiment Analyzer</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
+                A Python-based pipeline that streams posts for campaign hashtags, performs <span class="text-cyan-400 font-semibold">sentiment analysis</span> using transformer models, and visualizes rolling stats in a live dashboard. Recently upgraded with a <span class="text-cyan-400 font-semibold">Gemini hybrid model</span> for more accurate insights.
+            </p>
+            <div class="flex gap-2 flex-wrap">
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Python</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Transformers</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Gemini</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Dashboard</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
+        <div class="h-64 bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center relative">
+            <div class="text-8xl opacity-60">🌐</div>
+            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
+                ✅ Complete
+            </div>
+        </div>
+        <div class="p-8">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-yellow-500 to-orange-500 text-white">Web Development</span>
+            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">Personal Portfolio Website</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
+                A responsive portfolio website showcasing skills, certifications, and projects. Built with modern web technologies and featuring interactive elements and smooth animations.
+            </p>
+            <div class="flex gap-2 flex-wrap">
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">HTML5</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">CSS3</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">JavaScript</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Responsive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="text-center mt-20">
+                <div class="inline-flex items-center gap-4 bg-gray-800/80 glass-effect border border-cyan-500/30 rounded-full px-8 py-4">
+                    <i data-lucide="rocket" class="text-cyan-400"></i>
+                    <span class="text-xl font-semibold text-white">
+                        More projects coming soon as I continue learning!
+                    </span>
+                    <i data-lucide="heart" class="text-pink-400"></i>
                 </div>
-                <div class="border-t border-gray-800/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                    <p class="text-gray-500 text-sm">
-                        © 2025 Kavya Rajput. Made with ❤️ and lots of learning.
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-8 lg:px-16 relative overflow-hidden">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-6xl lg:text-7xl font-black mb-12">
+      <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Contact Me</span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
+        <i data-lucide="github" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
+        <p class="text-lg font-semibold text-white">GitHub</p>
+        <p class="text-gray-400">N/A</p>
+      </div>
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
+        <i data-lucide="mail" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
+        <p class="text-lg font-semibold text-white">Email</p>
+        <p class="text-gray-400">N/A</p>
+      </div>
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
+        <i data-lucide="linkedin" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
+        <p class="text-lg font-semibold text-white">LinkedIn</p>
+        <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="text-cyan-400 hover:underline">Visit Profile</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="py-16 px-8 lg:px-16 bg-gray-900/80 border-t border-gray-800/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="text-4xl font-black bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+                        Kavya Rajput
+                    </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        B.Tech Student passionate about technology, continuous learning, and building meaningful connections in the tech community.
                     </p>
-                    <div class="flex gap-6">
-                        <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
-                            <i data-lucide="linkedin" size="20"></i>
-                        </a>
-                        <a href="https://github.com/your-username" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
-                            <i data-lucide="github" size="20"></i>
-                        </a>
-                        <a href="" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
-                            <i data-lucide="twitter" size="20"></i>
-                        </a>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
+                    <div class="space-y-3">
+                        <a href="#home" class="block text-gray-400 hover:text-cyan-400 transition-colors">Home</a>
+                        <a href="#about" class="block text-gray-400 hover:text-cyan-400 transition-colors">About</a>
+                        <a href="#skills" class="block text-gray-400 hover:text-cyan-400 transition-colors">Skills</a>
+                        <a href="#certificates" class="block text-gray-400 hover:text-cyan-400 transition-colors">Certificates</a>
+                        <a href="#projects" class="block text-gray-400 hover:text-cyan-400 transition-colors">Projects</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-cyan-400 transition-colors">Contact</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Get In Touch</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="mail" size="16" class="text-cyan-400"></i>
+                            <span class="text-gray-400">kavya.gla_cs.aiml24@gla.ac.in</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="map-pin" size="16" class="text-cyan-400"></i>
+                            <span class="text-gray-400">India</span>
+                        </div>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="globe" size="16" class="text-cyan-400"></i>
+                            <span class="text-gray-400">Available for opportunities</span>
+                        </div>
                     </div>
                 </div>
             </div>
-        </footer>
 
-        <button id="backToTop" class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-cyan-600 to-purple-600 rounded-full flex items-center justify-center text-white opacity-0 invisible transition-all duration-300 hover:from-cyan-500 hover:to-purple-500 hover-glow z-50">
-            <i data-lucide="arrow-up" size="20"></i>
-        </button>
-    </main>
+            <div class="border-t border-gray-800/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">
+                    © 2025 Kavya Rajput. Made with ❤️ and lots of learning.
+                </p>
+                
+                <div class="flex gap-6">
+                    <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
+                        <i data-lucide="linkedin" size="20"></i>
+                    </a>
+                    <a href="" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
+                        <i data-lucide="github" size="20"></i>
+                    </a>
+                    <a href="" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
+                        <i data-lucide="twitter" size="20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button id="backToTop" class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-cyan-600 to-purple-600 rounded-full flex items-center justify-center text-white opacity-0 invisible transition-all duration-300 hover:from-cyan-500 hover:to-purple-500 hover-glow z-50">
+        <i data-lucide="arrow-up" size="20"></i>
+    </button>
 
     <script>
         // Smooth scrolling for navigation links
@@ -506,19 +813,10 @@
             });
         });
 
-        // Toggle certifications section
-        document.addEventListener("DOMContentLoaded", function() {
-            const btn = document.getElementById("toggleCerts");
-            const more = document.getElementById("moreCerts");
-            btn.addEventListener("click", () => {
-                if (more.classList.contains("hidden")) {
-                    more.classList.remove("hidden");
-                    btn.textContent = "View Less";
-                } else {
-                    more.classList.add("hidden");
-                    btn.textContent = "View More";
-                }
-            });
+        // Form submission handling (placeholder)
+        document.querySelector('button[type="button"]')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo portfolio - form submission is not actually processed.');
         });
 
         // Add some interactive animations on scroll
@@ -546,7 +844,7 @@
 
         // Initialize icons after DOM is loaded
         document.addEventListener('DOMContentLoaded', function() {
-            lucide.createIcons();
+            // Lucide icons should already be initialized by the module script
             console.log('Portfolio loaded successfully!');
         });
     </script>
