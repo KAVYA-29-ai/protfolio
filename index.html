@@ -380,7 +380,7 @@
                     <span class="text-xl font-semibold text-white">
                         Learning Progress: <span class="text-cyan-400">Growing Every Day</span>
                     </span>
-                    <i data-lucide="star" class="text-cyan-400"></i>
+                    <i data-lucide="star" class="text-pink-400"></i>
                 </div>
             </div>
         </div>
@@ -395,7 +395,7 @@
       <p class="text-xl text-gray-400 max-w-3xl mx-auto">A summary of my key certifications. You can find a complete list on my LinkedIn profile.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="certGrid">
       <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
         <div class="flex items-center gap-4 mb-4">
           <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
@@ -425,8 +425,120 @@
             I earned certifications in HTML5, CSS3, and JavaScript, demonstrating a strong foundation in front-end web development.
         </p>
       </div>
+
+      <div id="moreCerts" class="hidden md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">SQL (Basic)</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              This certification showcases my foundational knowledge in SQL for database management.
+          </p>
+        </div>
+
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Python (Basic)</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              I have a solid understanding of basic Python programming concepts and syntax.
+          </p>
+        </div>
+        
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">HTML5</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              Proficient in structuring web pages using modern HTML5 standards.
+          </p>
+        </div>
+
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">CSS3</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              Skilled in styling and creating responsive designs with CSS3.
+          </p>
+        </div>
+        
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">JavaScript</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              I have foundational knowledge of JavaScript for interactive web experiences.
+          </p>
+        </div>
+        
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Intermediate Problem Solving</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              This certification demonstrates my intermediate-level problem solving abilities.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <button id="toggleCerts" class="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">View More</button>
     </div>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const btn = document.getElementById("toggleCerts");
+      const more = document.getElementById("moreCerts");
+      btn.addEventListener("click", () => {
+        if (more.classList.contains("hidden")) {
+          more.classList.remove("hidden");
+          btn.textContent = "View Less";
+        } else {
+          more.classList.add("hidden");
+          btn.textContent = "View More";
+        }
+      });
+    });
+  </script>
 </section>
 
 
@@ -497,6 +609,7 @@
         </div>
     </div>
 </div>
+
 
             <div class="text-center mt-20">
                 <div class="inline-flex items-center gap-4 bg-gray-800/80 glass-effect border border-cyan-500/30 rounded-full px-8 py-4">
