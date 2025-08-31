@@ -1,10 +1,3 @@
-# protfolio
-my protfolio
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,13 +5,10 @@ my protfolio
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kavya Rajput - AI Innovator & Data Wizard</title>
     
-    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     
-    <!-- Framer Motion -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/framer-motion/10.16.4/framer-motion.js"></script>
     
-    <!-- Lucide React Icons -->
     <script type="module">
         import { createIcons, ChevronDown, Github, ExternalLink, X, MessageCircle, Mail, Phone, MapPin, Calendar, Award, Code, Database, BarChart3, PenTool, Cloud, Bot, Sparkles, Zap, Star, Layers, Cpu, Target, Brain, Eye, Users, TrendingUp, Rocket, Heart, Coffee, Music, ArrowRight, ArrowUp, Globe, Linkedin, Twitter, Instagram, Play, Pause, Volume2, Minimize2 } from 'https://unpkg.com/lucide@latest/dist/esm/lucide.js';
         createIcons();
@@ -103,7 +93,6 @@ my protfolio
 </head>
 <body class="bg-gray-900 text-white overflow-x-hidden">
     
-    <!-- Navigation -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass-effect">
         <div class="max-w-7xl mx-auto px-8">
             <div class="flex justify-between items-center h-20">
@@ -139,9 +128,7 @@ my protfolio
         </div>
     </nav>
 
-    <!-- Hero Section -->
     <section id="home" class="min-h-screen flex items-center justify-between px-8 lg:px-16 relative overflow-hidden">
-        <!-- Animated background elements -->
         <div class="absolute inset-0 bg-gradient-to-br from-cyan-500/5 via-purple-500/5 to-pink-500/5 rounded-full blur-3xl"></div>
 
         <div class="flex-1 max-w-3xl relative z-10">
@@ -161,18 +148,18 @@ my protfolio
             </h1>
             
             <div class="text-3xl lg:text-4xl text-gray-300 mb-10 h-16 relative">
-                <span class="typewriter">AI Innovator | Data Wizard | Future Builder</span>
+                <span class="typewriter">B.Tech Student | Tech Enthusiast | Problem Solver</span>
             </div>
 
             <p class="text-2xl text-gray-400 mb-12 leading-relaxed max-w-2xl">
-                Transforming data into intelligence, dreams into reality. 
-                Building the future with <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text font-bold">AI & Analytics</span>
+                Passionate about technology and continuous learning. 
+                Building skills in <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text font-bold">Modern Technologies</span>
             </p>
 
             <div class="flex gap-8 flex-wrap">
                 <button class="px-10 py-5 bg-gradient-to-r from-cyan-600 via-blue-600 to-purple-600 text-white rounded-full font-bold text-lg hover:from-cyan-500 hover:to-purple-500 transition-all duration-300 flex items-center gap-3 relative overflow-hidden group hover-glow">
                     <i data-lucide="rocket"></i>
-                    <span>Explore My Universe</span>
+                    <span>Explore My Journey</span>
                 </button>
                 
                 <button class="px-10 py-5 border-2 border-cyan-500/50 text-cyan-400 rounded-full font-bold text-lg hover:bg-cyan-500/10 transition-all duration-300 flex items-center gap-3 glass-effect">
@@ -181,17 +168,16 @@ my protfolio
                 </button>
             </div>
 
-            <!-- Stats Counter -->
             <div class="mt-16 grid grid-cols-3 gap-8 max-w-lg">
                 <div class="text-center">
                     <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                        15+
+                        9+
                     </div>
                     <div class="text-gray-500 text-sm mt-1">Certifications</div>
                 </div>
                 <div class="text-center">
                     <div class="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
-                        10+
+                        3+
                     </div>
                     <div class="text-gray-500 text-sm mt-1">Projects</div>
                 </div>
@@ -204,18 +190,11 @@ my protfolio
             </div>
         </div>
 
-        <!-- 3D Avatar -->
-        <div class="flex-1 flex justify-center items-center relative">
-            <div class="relative">
-                <!-- Main avatar container -->
-                <div class="relative w-[500px] h-[500px] bg-gradient-to-br from-cyan-400/10 via-purple-600/10 to-pink-400/10 rounded-full flex items-center justify-center glass-effect border border-cyan-500/20">
-                    <div class="text-9xl floating">🚀</div>
-                </div>
-            </div>
+        <div class="flex-1 flex justify-center items-center relative z-10" style="height: 100vh;">
+            <iframe src='https://my.spline.design/robotfollowcursorforlandingpage-5rOjbm2iFzVunAPOarpdA6Qj/' frameborder='0' width='100%' height='100%' class="absolute inset-0"></iframe>
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="about" class="py-32 px-8 lg:px-16 relative overflow-hidden">
         <div class="max-w-6xl mx-auto">
             <h2 class="text-6xl lg:text-7xl font-black text-center mb-20 relative">
@@ -225,40 +204,37 @@ my protfolio
             </h2>
 
             <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <!-- Text Content -->
                 <div class="space-y-8">
                     <p class="text-2xl text-gray-300 leading-relaxed">
-                        I'm a passionate <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text font-bold">B.Tech student</span> with an insatiable curiosity for 
-                        Artificial Intelligence, Machine Learning, and Data Analytics.
+                        I'm a passionate <span class="text-transparent bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text font-bold">B.Tech student</span> with a strong foundation in 
+                        technology and a drive for continuous learning and innovation.
                     </p>
 
                     <p class="text-xl text-gray-400 leading-relaxed">
-                        My mission? To bridge the gap between complex data and meaningful insights, 
-                        creating intelligent solutions that transform how we understand and interact with technology.
+                        My journey involves building skills across various technologies, earning industry certifications, 
+                        and creating projects that solve real-world problems.
                     </p>
 
-                    <!-- Achievement badges -->
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-gradient-to-r from-red-500 to-pink-500 p-4 rounded-2xl text-white font-semibold flex items-center gap-3 glass-effect">
                             <i data-lucide="target"></i>
-                            <span>Problem Solver</span>
+                            <span>Goal Oriented</span>
                         </div>
                         <div class="bg-gradient-to-r from-blue-500 to-cyan-500 p-4 rounded-2xl text-white font-semibold flex items-center gap-3 glass-effect">
                             <i data-lucide="brain"></i>
-                            <span>AI Enthusiast</span>
+                            <span>Quick Learner</span>
                         </div>
                         <div class="bg-gradient-to-r from-green-500 to-emerald-500 p-4 rounded-2xl text-white font-semibold flex items-center gap-3 glass-effect">
                             <i data-lucide="trending-up"></i>
-                            <span>Data Driven</span>
+                            <span>Tech Focused</span>
                         </div>
                         <div class="bg-gradient-to-r from-purple-500 to-pink-500 p-4 rounded-2xl text-white font-semibold flex items-center gap-3 glass-effect">
                             <i data-lucide="heart"></i>
-                            <span>Innovation Lover</span>
+                            <span>Innovation Driven</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Interactive Info Cards -->
                 <div class="space-y-6">
                     <div class="bg-gray-800/80 glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 group">
                         <div class="flex items-center gap-4">
@@ -269,7 +245,7 @@ my protfolio
                                 <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
                                     Current Status
                                 </h3>
-                                <p class="text-gray-400">B.Tech Student - Pursuing Excellence</p>
+                                <p class="text-gray-400">B.Tech Student - GLA 2nd Year</p>
                             </div>
                         </div>
                     </div>
@@ -283,7 +259,7 @@ my protfolio
                                 <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
                                     Location
                                 </h3>
-                                <p class="text-gray-400">India - Building Global Solutions</p>
+                                <p class="text-gray-400">India - Building Global Skills</p>
                             </div>
                         </div>
                     </div>
@@ -295,9 +271,9 @@ my protfolio
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
-                                    Specialization
+                                    Focus Areas
                                 </h3>
-                                <p class="text-gray-400">AI/ML - Future Technology</p>
+                                <p class="text-gray-400">Modern Tech Stack & Best Practices</p>
                             </div>
                         </div>
                     </div>
@@ -305,13 +281,13 @@ my protfolio
                     <div class="bg-gray-800/80 glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition-all duration-300 group">
                         <div class="flex items-center gap-4">
                             <div class="w-14 h-14 rounded-2xl bg-gradient-to-r from-green-500 to-emerald-500 flex items-center justify-center">
-                                <i data-lucide="bar-chart-3" class="text-white"></i>
+                                <i data-lucide="award" class="text-white"></i>
                             </div>
                             <div>
                                 <h3 class="text-xl font-bold text-white mb-1 group-hover:text-cyan-400 transition-colors">
-                                    Expertise
+                                    Achievement
                                 </h3>
-                                <p class="text-gray-400">Data Analytics - Insights & Intelligence</p>
+                                <p class="text-gray-400">Multiple Industry Certifications</p>
                             </div>
                         </div>
                     </div>
@@ -320,365 +296,557 @@ my protfolio
         </div>
     </section>
 
-    <!-- Skills Section -->
     <section id="skills" class="py-32 px-8 lg:px-16 bg-gray-900/50 relative overflow-hidden">
         <div class="max-w-7xl mx-auto relative z-10">
             <h2 class="text-6xl lg:text-7xl font-black text-center mb-8">
                 <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                    Skills & Expertise
+                    Skills & Learning
                 </span>
             </h2>
 
             <p class="text-2xl text-gray-400 text-center mb-20 max-w-3xl mx-auto">
-                Mastering the tools that shape tomorrow's technology landscape
+                Building expertise through continuous learning and practical application
             </p>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- AI/ML Skill -->
                 <div class="group bg-gray-800/80 glass-effect rounded-3xl p-8 text-center hover:border-cyan-500/50 transition-all duration-500 relative overflow-hidden hover-glow">
                     <div class="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
-                        <i data-lucide="brain" class="text-white" size="28"></i>
+                        <i data-lucide="target" class="text-white" size="28"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">AI/ML</h3>
-                    <p class="text-gray-400 mb-6 text-sm">Neural Networks & Deep Learning</p>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Problem Solving</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Analytical Thinking & Logic</p>
                     <div class="w-full bg-gray-700/50 rounded-full h-3 overflow-hidden">
-                        <div class="h-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 85%"></div>
+                        <div class="h-3 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full" style="width: 75%"></div>
                     </div>
                     <div class="flex items-center justify-center gap-2 text-gray-500 mt-4">
-                        <i data-lucide="layers" size="16"></i>
-                        <span class="text-sm">8 Projects</span>
+                        <i data-lucide="award" size="16"></i>
+                        <span class="text-sm">Certified</span>
                     </div>
                 </div>
 
-                <!-- Data Analytics Skill -->
                 <div class="group bg-gray-800/80 glass-effect rounded-3xl p-8 text-center hover:border-cyan-500/50 transition-all duration-500 relative overflow-hidden hover-glow">
                     <div class="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
-                        <i data-lucide="bar-chart-3" class="text-white" size="28"></i>
+                        <i data-lucide="cloud" class="text-white" size="28"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Data Analytics</h3>
-                    <p class="text-gray-400 mb-6 text-sm">Statistical Analysis & Visualization</p>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Cloud Computing</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Azure Fundamentals</p>
                     <div class="w-full bg-gray-700/50 rounded-full h-3 overflow-hidden">
-                        <div class="h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 90%"></div>
+                        <div class="h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full" style="width: 70%"></div>
                     </div>
                     <div class="flex items-center justify-center gap-2 text-gray-500 mt-4">
-                        <i data-lucide="layers" size="16"></i>
-                        <span class="text-sm">12 Projects</span>
+                        <i data-lucide="award" size="16"></i>
+                        <span class="text-sm">Certified</span>
                     </div>
                 </div>
 
-                <!-- Python Skill -->
                 <div class="group bg-gray-800/80 glass-effect rounded-3xl p-8 text-center hover:border-cyan-500/50 transition-all duration-500 relative overflow-hidden hover-glow">
                     <div class="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center">
                         <i data-lucide="code" class="text-white" size="28"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Python</h3>
-                    <p class="text-gray-400 mb-6 text-sm">Advanced Programming & Libraries</p>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Web Development</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Modern Frameworks & Tools</p>
                     <div class="w-full bg-gray-700/50 rounded-full h-3 overflow-hidden">
-                        <div class="h-3 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full" style="width: 88%"></div>
+                        <div class="h-3 bg-gradient-to-r from-yellow-500 to-orange-500 rounded-full" style="width: 65%"></div>
                     </div>
                     <div class="flex items-center justify-center gap-2 text-gray-500 mt-4">
                         <i data-lucide="layers" size="16"></i>
-                        <span class="text-sm">15 Projects</span>
+                        <span class="text-sm">Learning</span>
                     </div>
                 </div>
 
-                <!-- SQL Skill -->
                 <div class="group bg-gray-800/80 glass-effect rounded-3xl p-8 text-center hover:border-cyan-500/50 transition-all duration-500 relative overflow-hidden hover-glow">
                     <div class="w-20 h-20 mx-auto mb-6 rounded-3xl bg-gradient-to-r from-blue-500 to-indigo-500 flex items-center justify-center">
-                        <i data-lucide="database" class="text-white" size="28"></i>
+                        <i data-lucide="cpu" class="text-white" size="28"></i>
                     </div>
-                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">SQL</h3>
-                    <p class="text-gray-400 mb-6 text-sm">Complex Queries & Optimization</p>
+                    <h3 class="text-2xl font-bold text-white mb-3 group-hover:text-cyan-400 transition-colors">Technology</h3>
+                    <p class="text-gray-400 mb-6 text-sm">Emerging Tech & Innovation</p>
                     <div class="w-full bg-gray-700/50 rounded-full h-3 overflow-hidden">
-                        <div class="h-3 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 82%"></div>
+                        <div class="h-3 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-full" style="width: 68%"></div>
                     </div>
                     <div class="flex items-center justify-center gap-2 text-gray-500 mt-4">
                         <i data-lucide="layers" size="16"></i>
-                        <span class="text-sm">10 Projects</span>
+                        <span class="text-sm">Exploring</span>
                     </div>
                 </div>
             </div>
 
-            <!-- Skills summary -->
             <div class="mt-20 text-center">
                 <div class="inline-flex items-center gap-4 bg-gray-800/80 glass-effect border border-cyan-500/30 rounded-full px-8 py-4 hover-glow">
                     <i data-lucide="star" class="text-cyan-400"></i>
                     <span class="text-xl font-semibold text-white">
-                        Average Proficiency: <span class="text-cyan-400">81%</span>
+                        Learning Progress: <span class="text-cyan-400">Growing Every Day</span>
                     </span>
-                    <i data-lucide="star" class="text-cyan-400"></i>
+                    <i data-lucide="star" class="text-pink-400"></i>
                 </div>
             </div>
         </div>
     </section>
 
-                        </div>
+    <section id="certificates" class="py-32 px-8 lg:px-16 relative overflow-hidden">
+  <div class="max-w-5xl mx-auto relative z-10">
+    <div class="text-center mb-16">
+      <h2 class="text-6xl lg:text-7xl font-black mb-8">
+        <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Certificates</span>
+      </h2>
+      <p class="text-xl text-gray-400 max-w-3xl mx-auto">A summary of my key certifications. You can find a complete list on my LinkedIn profile.</p>
+    </div>
 
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors line-clamp-2">
-                            Problem Solving (Intermediate)
-                        </h3>
-                        
-                        <div class="flex items-center gap-2 mb-4">
-                            <div class="w-8 h-8 rounded-full bg-gradient-to-r from-green-500 to-teal-500 flex items-center justify-center">
-                                <i data-lucide="award" size="16" class="text-white"></i>
-                            </div>
-                            <div>
-                                <p class="text-cyan-400 font-semibold text-sm">HackerRank</p>
-                                <p class="text-gray-500 text-xs">Dec 05, 2024</p>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 mb-2">Skills Validated:</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-gray-700/50 text-gray-300 text-xs rounded-full border border-gray-600/50">
-                                    Algorithms
-                                </span>
-                                <span class="px-2 py-1 bg-gray-700/50 text-gray-300 text-xs rounded-full border border-gray-600/50">
-                                    Logic Building
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="border-t border-gray-700/50 pt-4">
-                            <p class="text-xs text-gray-500 mb-2">Credential ID:</p>
-                            <p class="text-xs text-cyan-400 font-mono">HR-PS-INT-2024</p>
-                        </div>
-                    </div>
-
-                    <div class="absolute top-4 right-4 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                        ✓
-                    </div>
-                </div>
-
-                <!-- Certificate 3 -->
-                <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 hover-glow">
-                    <div class="p-6 pb-4">
-                        <div class="flex items-center justify-between mb-4">
-                            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center text-2xl">
-                                ☁️
-                            </div>
-                            <div class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-600 text-white">
-                                Fundamentals
-                            </div>
-                        </div>
-
-                        <h3 class="text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors line-clamp-2">
-                            Azure Fundamentals
-                        </h3>
-                        
-                        <div class="flex items-center gap-2 mb-4">
-                            <div class="w-8 h-8 rounded-full bg-gradient-to-r from-cyan-500 to-blue-600 flex items-center justify-center">
-                                <i data-lucide="award" size="16" class="text-white"></i>
-                            </div>
-                            <div>
-                                <p class="text-cyan-400 font-semibold text-sm">Microsoft</p>
-                                <p class="text-gray-500 text-xs">Jan 18, 2025</p>
-                            </div>
-                        </div>
-
-                        <div class="mb-4">
-                            <p class="text-xs text-gray-500 mb-2">Skills Validated:</p>
-                            <div class="flex flex-wrap gap-2">
-                                <span class="px-2 py-1 bg-gray-700/50 text-gray-300 text-xs rounded-full border border-gray-600/50">
-                                    Cloud Computing
-                                </span>
-                                <span class="px-2 py-1 bg-gray-700/50 text-gray-300 text-xs rounded-full border border-gray-600/50">
-                                    Azure Services
-                                </span>
-                            </div>
-                        </div>
-
-                        <div class="border-t border-gray-700/50 pt-4">
-                            <p class="text-xs text-gray-500 mb-2">Credential ID:</p>
-                            <p class="text-xs text-cyan-400 font-mono">MS-AZ-900-2025</p>
-                        </div>
-                    </div>
-
-                    <div class="absolute top-4 right-4 w-8 h-8 bg-green-500 rounded-full flex items-center justify-center">
-                        ✓
-                    </div>
-                </div>
-            </div>
-
-            <!-- Call to action -->
-            <div class="text-center mt-20">
-                <button class="px-12 py-4 bg-gradient-to-r from-cyan-600 to-purple-600 text-white rounded-full font-bold text-lg hover:from-cyan-500 hover:to-purple-500 transition-all duration-300 flex items-center gap-3 mx-auto hover-glow">
-                    <i data-lucide="external-link"></i>
-                    View All Certificates
-                    <i data-lucide="arrow-right"></i>
-                </button>
-            </div>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8" id="certGrid">
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+            <i data-lucide="award" class="text-white" size="28"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Problem Solving</h3>
+            <p class="text-gray-400">HackerRank</p>
+          </div>
         </div>
-    </section>
+        <p class="text-gray-400 leading-relaxed">
+            This certification validates my ability to solve complex problems and apply logical and analytical thinking.
+        </p>
+      </div>
 
-    <!-- Projects Section -->
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+        <div class="flex items-center gap-4 mb-4">
+          <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+            <i data-lucide="code" class="text-white" size="28"></i>
+          </div>
+          <div>
+            <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Web Development Fundamentals</h3>
+            <p class="text-gray-400">Infosys Springboard</p>
+          </div>
+        </div>
+        <p class="text-gray-400 leading-relaxed">
+            I earned certifications in HTML5, CSS3, and JavaScript, demonstrating a strong foundation in front-end web development.
+        </p>
+      </div>
+
+      <div id="moreCerts" class="hidden md:col-span-2 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">SQL (Basic)</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              This certification showcases my foundational knowledge in SQL for database management.
+          </p>
+        </div>
+
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Python (Basic)</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              I have a solid understanding of basic Python programming concepts and syntax.
+          </p>
+        </div>
+        
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">HTML5</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              Proficient in structuring web pages using modern HTML5 standards.
+          </p>
+        </div>
+
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">CSS3</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              Skilled in styling and creating responsive designs with CSS3.
+          </p>
+        </div>
+        
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">JavaScript</h3>
+              <p class="text-gray-400">Infosys Springboard</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              I have foundational knowledge of JavaScript for interactive web experiences.
+          </p>
+        </div>
+        
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+              <i data-lucide="code" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Intermediate Problem Solving</h3>
+              <p class="text-gray-400">HackerRank</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              This certification demonstrates my intermediate-level problem solving abilities.
+          </p>
+        </div>
+
+        <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition group">
+          <div class="flex items-center gap-4 mb-4">
+            <div class="w-16 h-16 rounded-2xl bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+              <i data-lucide="award" class="text-white" size="28"></i>
+            </div>
+            <div>
+              <h3 class="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">Microsoft Azure Fundamentals</h3>
+              <p class="text-gray-400">Microsoft</p>
+            </div>
+          </div>
+          <p class="text-gray-400 leading-relaxed">
+              This certification validates my foundational knowledge of cloud services and how those services are provided with Microsoft Azure.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="text-center mt-10">
+      <button id="toggleCerts" class="px-8 py-3 rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 text-white font-semibold shadow-lg hover:shadow-cyan-500/50 transition">View More</button>
+    </div>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const btn = document.getElementById("toggleCerts");
+      const more = document.getElementById("moreCerts");
+      btn.addEventListener("click", () => {
+        if (more.classList.contains("hidden")) {
+          more.classList.remove("hidden");
+          btn.textContent = "View Less";
+        } else {
+          more.classList.add("hidden");
+          btn.textContent = "View More";
+        }
+      });
+    });
+  </script>
+</section>
+
+
     <section id="projects" class="py-32 px-8 lg:px-16 bg-gray-900/50 relative overflow-hidden">
         <div class="max-w-7xl mx-auto relative z-10">
             <div class="text-center mb-16">
                 <h2 class="text-6xl lg:text-7xl font-black mb-8">
                     <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">
-                        Featured Projects
+                        Projects
                     </span>
                 </h2>
                 
                 <p class="text-2xl text-gray-400 max-w-4xl mx-auto mb-8">
-                    Innovative solutions that push the boundaries of technology and create meaningful impact
+                    Personal projects showcasing learning journey and technical growth
                 </p>
 
                 <div class="flex justify-center gap-12">
                     <div class="text-center">
-                        <div class="text-4xl font-bold text-cyan-400">6</div>
+                        <div class="text-4xl font-bold text-cyan-400">3</div>
                         <div class="text-gray-500">Total Projects</div>
                     </div>
                     <div class="text-center">
                         <div class="text-4xl font-bold text-purple-400">3</div>
-                        <div class="text-gray-500">Featured</div>
+                        <div class="text-gray-500">Completed</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-4xl font-bold text-pink-400">4</div>
-                        <div class="text-gray-500">Completed</div>
+                        <div class="text-4xl font-bold text-pink-400">100%</div>
+                        <div class="text-gray-500">Learning</div>
                     </div>
                 </div>
             </div>
 
-            <!-- Projects grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-                <!-- Project 1 -->
-                <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
-                    <div class="h-64 bg-gradient-to-br from-cyan-500 to-blue-500 relative overflow-hidden flex items-center justify-center">
-                        <div class="text-8xl opacity-60">🤖</div>
-                        
-                        <div class="absolute top-4 left-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1">
-                            <i data-lucide="star" size="14"></i>
-                            Featured
-                        </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
+    <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
+        <div class="h-64 bg-gradient-to-br from-cyan-500 to-blue-500 flex items-center justify-center relative">
+            <div class="text-8xl opacity-60">🤖</div>
+            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
+                ✅ Complete
+            </div>
+        </div>
+        <div class="p-8">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 text-white">AI / LLM</span>
+            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">AI Powered Marketing Portfolio Site</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
+                A static portfolio platform where case study pages are dynamically generated using LLMs. Visitors can also request a <span class="text-cyan-400 font-semibold">custom proposal outline</span> through an integrated form.
+            </p>
+            <div class="flex gap-2 flex-wrap">
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">LLM</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Static Site</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Dynamic Pages</span>
+            </div>
+        </div>
+    </div>
 
-                        <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
-                            ✅ Complete
-                        </div>
+    <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
+        <div class="h-64 bg-gradient-to-br from-purple-500 to-pink-500 flex items-center justify-center relative">
+            <div class="text-8xl opacity-60">📊</div>
+            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
+                ✅ Complete
+            </div>
+        </div>
+        <div class="p-8">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white">Data / AI</span>
+            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">Social Media Sentiment Analyzer</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
+                A Python-based pipeline that streams posts for campaign hashtags, performs <span class="text-cyan-400 font-semibold">sentiment analysis</span> using transformer models, and visualizes rolling stats in a live dashboard. Recently upgraded with a <span class="text-cyan-400 font-semibold">Gemini hybrid model</span> for more accurate insights.
+            </p>
+            <div class="flex gap-2 flex-wrap">
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Python</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Transformers</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Gemini</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Dashboard</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
+        <div class="h-64 bg-gradient-to-br from-yellow-500 to-orange-500 flex items-center justify-center relative">
+            <div class="text-8xl opacity-60">🌐</div>
+            <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
+                ✅ Complete
+            </div>
+        </div>
+        <div class="p-8">
+            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-yellow-500 to-orange-500 text-white">Web Development</span>
+            <h3 class="text-2xl font-bold text-white mt-4 mb-3 group-hover:text-cyan-400 transition">Personal Portfolio Website</h3>
+            <p class="text-gray-400 mb-6 leading-relaxed line-clamp-3">
+                A responsive portfolio website showcasing skills, certifications, and projects. Built with modern web technologies and featuring interactive elements and smooth animations.
+            </p>
+            <div class="flex gap-2 flex-wrap">
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">HTML5</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">CSS3</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">JavaScript</span>
+                <span class="px-3 py-1 bg-gray-700/50 text-sm text-gray-300 rounded-full">Responsive</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+            <div class="text-center mt-20">
+                <div class="inline-flex items-center gap-4 bg-gray-800/80 glass-effect border border-cyan-500/30 rounded-full px-8 py-4">
+                    <i data-lucide="rocket" class="text-cyan-400"></i>
+                    <span class="text-xl font-semibold text-white">
+                        More projects coming soon as I continue learning!
+                    </span>
+                    <i data-lucide="heart" class="text-pink-400"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-32 px-8 lg:px-16 relative overflow-hidden">
+  <div class="max-w-5xl mx-auto text-center">
+    <h2 class="text-6xl lg:text-7xl font-black mb-12">
+      <span class="bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent">Contact Me</span>
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
+        <i data-lucide="github" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
+        <p class="text-lg font-semibold text-white">GitHub</p>
+        <p class="text-gray-400">N/A</p>
+      </div>
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
+        <i data-lucide="mail" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
+        <p class="text-lg font-semibold text-white">Email</p>
+        <p class="text-gray-400">N/A</p>
+      </div>
+      <div class="glass-effect rounded-2xl p-6 hover:border-cyan-500/50 transition">
+        <i data-lucide="linkedin" class="w-10 h-10 text-cyan-400 mx-auto mb-4"></i>
+        <p class="text-lg font-semibold text-white">LinkedIn</p>
+        <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="text-cyan-400 hover:underline">Visit Profile</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <footer class="py-16 px-8 lg:px-16 bg-gray-900/80 border-t border-gray-800/50">
+        <div class="max-w-6xl mx-auto">
+            <div class="grid lg:grid-cols-3 gap-12 mb-12">
+                <div>
+                    <div class="text-4xl font-black bg-gradient-to-r from-cyan-400 via-purple-400 to-pink-400 bg-clip-text text-transparent mb-4">
+                        Kavya Rajput
                     </div>
+                    <p class="text-gray-400 leading-relaxed">
+                        B.Tech Student passionate about technology, continuous learning, and building meaningful connections in the tech community.
+                    </p>
+                </div>
 
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-cyan-500 to-blue-500 text-white">
-                                AI/ML
-                            </span>
-                            <span class="text-gray-500 text-sm">2025</span>
-                        </div>
-
-                        <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                            AI Portfolio Generator
-                        </h3>
-                        
-                        <p class="text-gray-400 mb-6 line-clamp-3 leading-relaxed">
-                            Revolutionary AI-powered platform that transforms marketing vision into compelling case studies and winning proposals using advanced machine learning algorithms.
-                        </p>
-                        
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">React</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">OpenAI</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">Node.js</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-400 text-sm rounded-full">+3 more</span>
-                        </div>
-                        
-                        <div class="flex gap-4">
-                            <button class="flex items-center gap-2 px-4 py-2 bg-cyan-600 text-white rounded-xl hover:bg-cyan-500 transition-colors text-sm font-semibold">
-                                <i data-lucide="github" size="16"></i>
-                                Code
-                            </button>
-                            <button class="flex items-center gap-2 px-4 py-2 border border-cyan-500/50 text-cyan-400 rounded-xl hover:bg-cyan-500/10 transition-colors text-sm font-semibold">
-                                <i data-lucide="external-link" size="16"></i>
-                                Live Demo
-                            </button>
-                        </div>
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Quick Links</h4>
+                    <div class="space-y-3">
+                        <a href="#home" class="block text-gray-400 hover:text-cyan-400 transition-colors">Home</a>
+                        <a href="#about" class="block text-gray-400 hover:text-cyan-400 transition-colors">About</a>
+                        <a href="#skills" class="block text-gray-400 hover:text-cyan-400 transition-colors">Skills</a>
+                        <a href="#certificates" class="block text-gray-400 hover:text-cyan-400 transition-colors">Certificates</a>
+                        <a href="#projects" class="block text-gray-400 hover:text-cyan-400 transition-colors">Projects</a>
+                        <a href="#contact" class="block text-gray-400 hover:text-cyan-400 transition-colors">Contact</a>
                     </div>
                 </div>
 
-                <!-- Project 2 -->
-                <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
-                    <div class="h-64 bg-gradient-to-br from-purple-500 to-pink-500 relative overflow-hidden flex items-center justify-center">
-                        <div class="text-8xl opacity-60">📊</div>
-                        
-                        <div class="absolute top-4 left-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1">
-                            <i data-lucide="star" size="14"></i>
-                            Featured
+                <div>
+                    <h4 class="text-xl font-bold text-white mb-6">Get In Touch</h4>
+                    <div class="space-y-4">
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="mail" size="16" class="text-cyan-400"></i>
+                            <span class="text-gray-400">n/a</span>
                         </div>
-
-                        <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-semibold bg-green-500/20 text-green-400 border border-green-500/30">
-                            ✅ Complete
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="map-pin" size="16" class="text-cyan-400"></i>
+                            <span class="text-gray-400">India</span>
                         </div>
-                    </div>
-
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-purple-500 to-pink-500 text-white">
-                                Data Analytics
-                            </span>
-                            <span class="text-gray-500 text-sm">2024</span>
-                        </div>
-
-                        <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                            SentimentScope
-                        </h3>
-                        
-                        <p class="text-gray-400 mb-6 line-clamp-3 leading-relaxed">
-                            Real-time social media sentiment analysis platform using Reddit posts and Gemini AI for comprehensive emotional intelligence insights.
-                        </p>
-                        
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">Python</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">Transformers</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">React</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-400 text-sm rounded-full">+3 more</span>
-                        </div>
-                        
-                        <div class="flex gap-4">
-                            <button class="flex items-center gap-2 px-4 py-2 bg-cyan-600 text-white rounded-xl hover:bg-cyan-500 transition-colors text-sm font-semibold">
-                                <i data-lucide="github" size="16"></i>
-                                Code
-                            </button>
-                            <button class="flex items-center gap-2 px-4 py-2 border border-cyan-500/50 text-cyan-400 rounded-xl hover:bg-cyan-500/10 transition-colors text-sm font-semibold">
-                                <i data-lucide="external-link" size="16"></i>
-                                Live Demo
-                            </button>
+                        <div class="flex items-center gap-3">
+                            <i data-lucide="globe" size="16" class="text-cyan-400"></i>
+                            <span class="text-gray-400">Available for opportunities</span>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <!-- Project 3 -->
-                <div class="group bg-gray-800/80 glass-effect rounded-3xl overflow-hidden hover:border-cyan-500/50 transition-all duration-500 cursor-pointer hover-glow">
-                    <div class="h-64 bg-gradient-to-br from-indigo-500 to-purple-500 relative overflow-hidden flex items-center justify-center">
-                        <div class="text-8xl opacity-60">🌐</div>
-                        
-                        <div class="absolute top-4 left-4 bg-gradient-to-r from-yellow-500 to-orange-500 text-white px-3 py-1 rounded-full text-sm font-bold flex items-center gap-1">
-                            <i data-lucide="star" size="14"></i>
-                            Featured
-                        </div>
+            <div class="border-t border-gray-800/50 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+                <p class="text-gray-500 text-sm">
+                    © 2025 Kavya Rajput. Made with ❤️ and lots of learning.
+                </p>
+                
+                <div class="flex gap-6">
+                    <a href="https://www.linkedin.com/in/kavya-rajput-431055370/" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
+                        <i data-lucide="linkedin" size="20"></i>
+                    </a>
+                    <a href="" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
+                        <i data-lucide="github" size="20"></i>
+                    </a>
+                    <a href="" target="_blank" class="text-gray-500 hover:text-cyan-400 transition-colors">
+                        <i data-lucide="twitter" size="20"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
-                        <div class="absolute top-4 right-4 px-3 py-1 rounded-full text-sm font-semibold bg-orange-500/20 text-orange-400 border border-orange-500/30">
-                            🔄 In Progress
-                        </div>
-                    </div>
+    <button id="backToTop" class="fixed bottom-8 right-8 w-14 h-14 bg-gradient-to-r from-cyan-600 to-purple-600 rounded-full flex items-center justify-center text-white opacity-0 invisible transition-all duration-300 hover:from-cyan-500 hover:to-purple-500 hover-glow z-50">
+        <i data-lucide="arrow-up" size="20"></i>
+    </button>
 
-                    <div class="p-8">
-                        <div class="flex items-center justify-between mb-4">
-                            <span class="px-3 py-1 rounded-full text-xs font-semibold bg-gradient-to-r from-indigo-500 to-purple-500 text-white">
-                                IoT
-                            </span>
-                            <span class="text-gray-500 text-sm">2025</span>
-                        </div>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-                        <h3 class="text-2xl font-bold text-white mb-4 group-hover:text-cyan-400 transition-colors">
-                            Smart City IoT Platform
-                        </h3>
-                        
-                        <p class="text-gray-400 mb-6 line-clamp-3 leading-relaxed">
-                            IoT-based smart city management system for traffic optimization, energy management, and environmental monitoring.
-                        </p>
-                        
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">Python</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">IoT</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-300 text-sm rounded-full border border-gray-600/50">MQTT</span>
-                            <span class="px-3 py-1 bg-gray-700/50 text-gray-400
+        // Back to top button functionality
+        const backToTop = document.getElementById('backToTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.style.opacity = '1';
+                backToTop.style.visibility = 'visible';
+            } else {
+                backToTop.style.opacity = '0';
+                backToTop.style.visibility = 'invisible';
+            }
+        });
+
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Add active nav link highlighting
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('nav a[href^="#"]');
+
+        window.addEventListener('scroll', () => {
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.clientHeight;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('text-cyan-400');
+                link.classList.add('text-gray-300');
+                if (link.getAttribute('href') === `#${current}`) {
+                    link.classList.remove('text-gray-300');
+                    link.classList.add('text-cyan-400');
+                }
+            });
+        });
+
+        // Form submission handling (placeholder)
+        document.querySelector('button[type="button"]')?.addEventListener('click', function(e) {
+            e.preventDefault();
+            alert('Thank you for your message! This is a demo portfolio - form submission is not actually processed.');
+        });
+
+        // Add some interactive animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe elements for animation
+        document.querySelectorAll('.glass-effect').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // Initialize icons after DOM is loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            // Lucide icons should already be initialized by the module script
+            console.log('Portfolio loaded successfully!');
+        });
+    </script>
+</body>
+</html>
